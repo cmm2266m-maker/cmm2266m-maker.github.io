@@ -1,0 +1,1 @@
+﻿Put project photos in this folder, then reference them in content.js as images/your-photo.jpg

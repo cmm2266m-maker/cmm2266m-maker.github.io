@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio: projects, experience, and resume.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" id="brand"></a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow" id="hero-eyebrow"></p>
+      <h1 id="hero-name"></h1>
+      <p class="lede" id="hero-tagline"></p>
+      <div class="actions">
+        <a class="btn primary" id="resume-btn" download>Download resume</a>
+        <a class="btn" href="#projects">See projects</a>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap section">
+      <h2>Projects</h2>
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <section id="experience" class="wrap section">
+      <h2>Experience</h2>
+      <ol class="timeline" id="experience-list"></ol>
+    </section>
+
+    <section id="education" class="wrap section">
+      <h2>Education</h2>
+      <div id="education-list"></div>
+    </section>
+
+    <section id="skills" class="wrap section">
+      <h2>Skills</h2>
+      <div class="skills" id="skills-list"></div>
+    </section>
+
+    <section id="contact" class="wrap section contact">
+      <h2>Contact</h2>
+      <p class="lede">Open to internships and full-time roles. The fastest way to reach me is email.</p>
+      <ul class="links" id="contact-links"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer" id="footer"></footer>
+
+  <dialog id="project-dialog">
+    <button class="close" aria-label="Close" onclick="this.closest('dialog').close()">&times;</button>
+    <div id="dialog-body"></div>
+  </dialog>
+
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>
